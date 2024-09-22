@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --myTitle: #8C281F;
+    --myParagraphs: #222222;
+    --my-bg-primario: #BF7245;
+    --my-bg-secondario: #3B4F8C;
+    --my-color-white: #ffffff;
+    --hover-items: #ffd2ce;
+    --bg-main: #fff4f3;
+}
+
+.logo-sito {
+    font-size: 3rem;
+    color: var(--myTitle);
+}
+
+.logo-sito-annunci {
+    font-size: 2rem;
+    color: var(--myTitle);
+}
+
+.loghi-color {
+    color: var(--myTitle);
+}
+
+:active.nav-link i{
+    color: var(--my-color-white);
+}
+
+:active.nav-link{
+    color: var(--my-color-white);
+    transition: unset;
+}
+
+.logo-name {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.navigazione {
+    background-color: var(--my-color-white);
+}
+
+:hover.items-nav {
+    background-color: var(--hover-items);
+}
+
+:active.items-nav {
+    background-color: var(--myTitle);
+    color: white;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-bg: var(--hover-items);
+    --bs-dropdown-link-active-bg: var(--myTitle);
+    --bs-dropdown-link-active-color: var(--my-color-white);
+}
+
+:active.dropdown-menu i{
+    color: var(--my-color-white);
+}
+
+:active.navbar-nav{
+    --bs-nav-link-disabled-color: var(--my-color-white);
+}
+
+:active.navbar {
+    --bs-navbar-disabled-color: var(--my-color-white);
+    --bs-navbar-active-color: var(--my-color-white);
+}
+
+.my-img {
+    background-image: url(../img/house-1477041_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    
+}
+
+.my-img-text {
+    opacity: 0;
+    backdrop-filter: blur(6px);
+    width: 100%;
+    letter-spacing: 0.3rem;
+    color: var(--my-color-white);
+    animation: fadeInLeft 2s forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+    }
+}
+
+.button-color {
+    background-color: var(--myTitle);
+    color: var(--my-color-white);
+}
+
+:active.button-color {
+    background-color: var(--myTitle);
+    --bs-btn-active-bg: var(--myTitle);
+
+}
+
+:hover.button-color {
+    background-color: var(--hover-items);
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+
+.card {
+--bs-card-border-radius: none;
+--bs-card-inner-border-radius: none;
+
+}
+
+.btn {
+--bs-btn-border-radius: none;
+}
+
+:hover.card {
+    background-color: var(--bg-main);   
+}
+
+.titoli-card {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
+:hover.titoli-card {
+    text-decoration: underline;
+}
+
+#nostrinumeri .numero{
+    font-size: 2.5rem;
+}
+
+#nostrinumeri .testo-section{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
+}
+
+
+/* Pagina Annunci */
+
+
+.form-check-input:checked {
+    background-color: var(--myTitle);
+    border-color: var(--myTitle);
+}
+
+.form-check-input {
+
+    border: var(--bs-border-width) solid var(--myTitle);
+    
+}
+
+.form-check-input:focus {
+    border-color: var(--hover-items);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--hover-items);
+}
+
